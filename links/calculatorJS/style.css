@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 10%;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: darkcyan;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 500px;
+    width: 400px;
+    margin: auto;
+}
+
+.calculator-container2 {
+    padding: 10px;
+    border-radius: 1em;
+    height: 420px;
+    width: 400px;
+    margin: auto;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(37, 36, 36);
+    border-color: darkcyan;
+    color: white;
+    border-radius: 5px;
+    width: 92.5%;
+    height: 10%;
+    font-size: 1.5em;
+    text-align: right;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.buttons {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    background-color: white;
+    color: black;
+    border: solid black 0.5px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 85px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+button.equal{
+    height: 275px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(0.90);
+    transition: 0.25s;
+}
+.equal{
+    grid-row: span;
+}
+
+button:active {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+#btn {
+    background-color: #EC449B;
+    color: white;
+    transition: background-color ease-in-out;
+}
+
+#btn2 {
+    background-color: #EC449B;
+    color: white;
+    transition: background-color ease-in-out;
+}
+
+#btn:hover {
+    background-color: #CA2CBA;
+    transition: 0.50s;
+}
+
+.contain-foot {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+h4,
+h1 {
+    text-align: center;
+}
+
+.image {
+    vertical-align: middle;
+    margin-right: 5px;
+    display: inline-block;
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 7px;
+    border-radius: 30px;
+}
+
+.txt {
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 8px;
+}

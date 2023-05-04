@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Javascript</title>
+    <link rel="website icon" type="png" href="5968292.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        body {
+            background-color: #84815b;
+            display: grid;
+            place-items: center;
+        }
+
+        form {
+            color: white;
+        }
+
+        .container {
+            width: 40%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 47px;
+            padding-bottom: 3rem;
+            color: #4a1a2c;
+        }
+
+        .container h1 .title {
+            color: white;
+            margin-left: 1rem;
+        }
+
+        .container h1 .title:hover {
+            transition: 0.5s ease-in-out;
+            color: #425a8c;
+        }
+
+        .container .data input {
+            width: 70%;
+            padding: 5px;
+            border: none;
+            border-bottom: 2px solid white;
+            background-color: unset;
+            outline: none;
+            margin-left: 5px;
+            color: #4a1a2c;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .container label {
+            font-size: 16px;
+            font-weight: 400;
+            font-style: italic;
+            color: #4a1a2c;
+        }
+
+        .data #submit {
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+            background-color: #FFA31A;
+            color: black;
+            border: none;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
+
+        .data #submit:hover {
+            color: black;
+            background-color: #ADCF4F;
+        }
+        .data #submit:active {
+            background-color: #4e6ba6;
+            border: 3px solid black;
+            transition: 0.25s ease-in-out;
+        }
+
+        .container #charcount {
+            font-weight: bold;
+            color: #4a1a2c;
+        }
+
+        .container #minus {
+            font-weight: bold;
+            color: #4a1a2c;
+        }
+
+        .details {
+            color: white;
+        }
+        .container .data .fname{
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .container .data .lname{
+            margin-bottom: 17px;
+            padding: 5px;
+        }
+        .container .data .year{
+            margin-bottom: 40px;
+            padding: 5px;
+        }
+        .container .data .fname:hover{
+            background-color: #4e6ba6;
+            transition: 0.5s ease-in-out;
+        }
+        .container .data .lname:hover{
+            background-color: #4e6ba6;
+            transition: 0.5s ease-in-out;
+        }
+        .container .data .year:hover{
+            background-color: #4e6ba6;
+            transition: 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <forms class="data">
+            <h1>Personal <span class="title">Info</span></h1>
+            <center>
+                <div class="fname">
+                    <label>First Name: </label><input class="fname" id="data" onkeydown="charcount ()">
+                </div>
+                <div class="lname">
+                    <label>Last Name: </label><input id="data" onkeydown="charcount ()">
+                </div>
+                <div class="year">
+                    <label>Birth Year: </label><input id="data2" type="number">
+                </div>
+                <button type="submit" id="submit" onclick="btn()">Submit</button><br><br><br>
+                <p class="details">First Name is pressed <span id="charcount">0</span> Times</p><br>
+                <p class="details">Your Age is <span id="minus">0</span></p>
+            </center>
+        </forms>
+    </div>
+    <script>
+        AOS.init();
+        function charcount() {
+            var charcount = document.getElementById("charcount").innerHTML;
+            document.getElementById('charcount').innerHTML = Number(charcount) + 1;
+        }
+
+        function btn() {
+            alert("Your Information is Saved.")
+        }
+
+        var data2 = document.getElementById('data2');
+        var minus = document.getElementById('minus');
+        var y = 2023
+
+        data2.addEventListener('keyup', function () {
+            var val = data2.value;
+            minus.innerText = (y - val);
+        });
+    </script>
+</body>
+
+</html>

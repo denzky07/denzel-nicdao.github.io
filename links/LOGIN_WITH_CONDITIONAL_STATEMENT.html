@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: #272424;
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            text-align: center;
+            padding: 25px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            width: 30%;
+            padding-top: 25px;
+            padding-bottom: 75px;
+            margin: 13%;
+            background-color: #ebf1f1;
+            border-radius: 20px;
+        }
+        .uname{
+            width: 200px;
+            height: 27px;
+            border: none;
+            margin-bottom: 25px;
+            padding-left: 10px;
+            border-bottom: 1PX solid black;
+            background-color: #ebf1f1;
+        }
+        .pword{
+            width: 200px;
+            height: 27px;
+            border: none;
+            margin-bottom: 25px;
+            padding-left: 10px;
+            border-bottom: 1PX solid black;
+            background-color: #ebf1f1;
+            margin-left: 5px;
+        }
+        .button{
+            display: grid;
+            place-items: center;
+            margin-top: 15px;
+        }
+        .btn{
+            padding: 10px;
+            width: 125px;
+            color: #403737;
+            background-color: aquamarine;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            border-radius: 30px;
+            transition: 0.5s ease-in-out;
+        }
+        .btn:hover{
+            background-color: #36b64f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form1">
+            <form action="">
+                <h1>login</h1>
+                <div class="user">
+                    <label>Username:</label>
+                    <input type="text" id="uname" class="uname" placeholder="Enter Username">
+                </div>
+                <div class="pass">
+                    <label>Password:</label>
+                    <input type="password" id="pword" class="pword" placeholder="Enter Password">
+                </div>
+                <div class="button">
+                    <button id="btn" class="btn" value="Login" onclick="checkuname()">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function checkuname() {
+            var uname = document.getElementById("uname").value;
+            var pword = document.getElementById("pword").value;
+
+            if((uname == "")&&(pword == "")) {
+                alert("All textboxes are required");
+            }
+            else if(uname == ""){
+                alert("Username is empty");
+            }
+            else if(pword == ""){
+                alert("Password is empty");
+            }
+            else if((uname == "admin")&&(pword == "password")){
+                alert("Login Successful");
+            } 
+            else {
+                alert("Incorrect username or password");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@denzky07 | My Portfolio</title>
+    <link rel="icon" type="icon" href="assets/images/horizontal-scroll.png">
+
+    <!-- SwiperJS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Link for BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Stylesheet and Scripts -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Link for JS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-- Loader -->
+    <!-- <div class="load-wrapper">
+        <div class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+        </div>
+    </div> -->
+
+    <!-- Header -->
+    <header class="header">
+        <i class='bx bx-menu' id="menu-button"></i>
+        <nav class="nav-bar">
+            <a href="#home" class="active-now">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Activities</a>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" onclick="changetheme()">
+            <span class="slider"></span>
+        </label>
+    </header>
+    <section id="home" class="home">
+        <!-- Social Media -->
+        <div class="soc-med" data-aos="fade-up">
+            <a href="https://www.facebook.com/denzel.nicdao.7" target="_blank"><i
+                    class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.tiktok.com/@denzky07" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            <a href="https://www.youtube.com/channel/UCiNL0-K7TASuWjOd24Nxg5g" target="_blank"><i
+                    class='bx bxl-youtube'></i></a>
+            <a href="https://github.com/denzky07" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+        <!-- Content -->
+        <div class="content-home glitch-wrapper">
+            <h4 data-aos="fade-right" data-aos-delay="250">I'm</h4>
+            <h1 data-aos="fade-down" data-aos-delay="250" class="glitch" data-glitch="Denzel Nicdao">Denzel Nicdao</h1>
+            <p data-aos="fade-right" data-aos-delay="150" class="p1">An Information Technology student willing to accept
+                challenges in building websites and systems.</p>
+            <p data-aos="fade-right" data-aos-delay="150">Padayon! Future Web Developer - <span>Isaiah 60:22.</span></p>
+            <a href="#about" class="btn" data-aos="fade-up" data-aos-delay="150">Know Me</a>
+        </div>
+        <div class="nothing"></div>
+
+        <!-- Image Container -->
+        <div class="bg-2"></div>
+        <div class="skew">
+            <div class="image-container-home" data-aos="fade-down-left">
+                <img src="assets/images/profile.jpg" class="bottom">
+                <img src="assets/images/profile2.jpg" class="top">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+
+        <!-- Image Container -->
+        <div class="bg2" data-aos="fade-up-right"></div>
+        <div class="about-image" data-aos="fade-down-left">
+            <div class="image-about-container">
+                <img src="assets/images/home7.jpg" alt="Image 1" class="pic1">
+                <img src="assets/images/home5.jpg" alt="Image 2" class="pic2">
+                <img src="assets/images/home4.jpg" alt="Image 3" class="pic3">
+                <img src="assets/images/home6.jpg" alt="Image 4" class="pic4">
+                <img src="assets/images/home3.jpg" alt="Image 5" class="pic5">
+            </div>
+        </div>
+        <div class="nothing2"></div>
+
+        <!-- About content -->
+        <div class="content-about">
+            <h2 class="title" data-aos="fade-up"><span>About Me</span></h2>
+            <p data-aos="fade-up" class="subt" data-aos-delay="150">Who Am I</p>
+            <p data-aos="fade-up" data-aos-delay="150">Turning 21 this year, my complete name is <span>Denzel Perdon
+                    Nicdao</span>, a third-year BSIT student at the UA Main Campus. Thought I can't write a program
+                during my freshmen days - turns out to completely writing and layouting my own portfolio website.
+                Working in teams is amazing but working by myself hits different - turns out I can do both modalities. I
+                am passionate with finishing tasks and ensure that I will finish it on time - if possible. Success is a
+                journey, not a destination.</p>
+            <p data-aos="fade-up" data-aos-delay="150">Tinatrabaho Ang <span>TAGUMPAY</span>, Hindi
+                <span>HINIHINTAY!</span></p>
+            <a href="#skills" class="btn" data-aos="fade-up" data-aos-delay="170">Dig Deep</a>
+        </div>
+    </section>
+
+    <!-- Skill Section -->
+
+    <section class="skills" id="skills">
+        <h2 class="title" data-aos="fade-down"><span>Skills</span></h2>
+        <p data-aos="fade-down" class="subt" data-aos-delay="150">What I Am Great At</p>
+        <p class="content-skills" data-aos="fade-up">Skill variations and tools that I use.</p>
+
+        <!-- Main Box Container -->
+
+        <div class="main-box">
+
+            <!-- Skills -->
+
+            <div class="skill-container">
+                <div class="skill-box" data-aos="fade-right" data-aos-delay="350">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Programming</h3>
+                    <p>Web Design and Development <span class="barrier">|</span> System Development.</p>
+                </div>
+                <div class="skill-box" data-aos="fade-right" data-aos-delay="400">
+                    <i class='bx bx-video'></i>
+                    <h3>Video and Photo</h3>
+                    <p>Mobile Cinematography <span class="barrier">|</span> Video Editing <span class="barrier">|</span>
+                        Photo
+                        Editing.</p>
+                </div>
+            </div>
+
+            <!-- Used Tools Container -->
+
+            <div class="most">
+                <h3 data-aos="fade-up" data-aos-delay="200">Most used tools</h3>
+                <div class="skill-container2" data-aos="fade-up" data-aos-delay="350">
+                    <div class="container-tools">
+                        <div class="skill-box">
+                            <img src="assets/images/html5.png">
+                            <h3>HTML5</h3>
+                        </div>
+                    </div>
+                    <div class="container-tools">
+                        <div class="skill-box">
+                            <img src="assets/images/css3.png">
+                            <h3>CSS3</h3>
+                        </div>
+                    </div>
+                    <div class="container-tools">
+                        <div class="skill-box">
+                            <img src="assets/images/visual-studio-code.png">
+                            <h3>VSCode</h3>
+                        </div>
+                    </div>
+                    <div class="container-tools">
+                        <div class="skill-box">
+                            <img src="assets/images/5968292.png">
+                            <h3>JavaScript</h3>
+                        </div>
+                    </div>
+                    <div class="container-tools">
+                        <div class="skill-box">
+                            <img src="assets/images/php.png">
+                            <h3>PHP</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-container2" data-aos="fade-up" data-aos-delay="450">
+                    <div class="container-tools">
+                        <div class="skill-box">
+                            <img src="assets/images/adobe.png">
+                            <h3>PhotoShop</h3>
+                        </div>
+                    </div>
+                    <div class="container-tools">
+                        <div class="skill-box">
+                            <img src="assets/images/bootstrap.png">
+                            <h3>BootStrap</h3>
+                        </div>
+                    </div>
+                    <div class="container-tools">
+                        <div class="skill-box">
+                            <img src="assets/images/CapCut-app-Logo-Transparent.png">
+                            <h3>CapCut</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+
+    <section class="projects" id="projects">
+        <h2 data-aos="fade-down"><span>Activities</span></h2>
+        <p data-aos="fade-down" class="subt" data-aos-delay="150">What I've Been Working With</p>
+
+        <!-- JavaScript Container -->
+
+        <div class="activities-wrapper" data-aos="fade-up">
+            <div class="container-wrap">
+                <h2>JavaScript Projects</h2>
+                <div class="activities-box mySwiper">
+                    <div class="activities-content swiper-wrapper">
+                        <div class="activities-slide swiper-slide">
+                            <img src="assets/images/js1.png" alt="Images">
+                            <h3>JavaScript Onclick</h3>
+                            <p>A project demonstrating the OnClick functionality of JavaScript.</p>
+                            <a href="links/act1.html" class="btn" target="_blank">View</a>
+                        </div>
+                        <div class="activities-slide swiper-slide">
+                            <img src="assets/images/js2.png" alt="Images">
+                            <h3>JavaScript Output</h3>
+                            <p>A project displaying JavaScript Outputs, such as .innerHTML, document.write(), alert(),
+                                and console.log()</p>
+                            <a href="links/denzel.html" class="btn" target="_blank">View</a>
+                        </div>
+                        <div class="activities-slide swiper-slide">
+                            <img src="assets/images/js3.png" alt="Images">
+                            <h3>Personal Information</h3>
+                            <p>A website that accepts user inputs such as name and birth year then displays the key
+                                presses and calculates the age.</p>
+                            <a href="links/HTMLevents_PERSONALinfo.html" class="btn" target="_blank">View</a>
+                        </div>
+                        <div class="activities-slide swiper-slide">
+                            <img src="assets/images/act1.png" alt="Images">
+                            <h3>Login With Conditions</h3>
+                            <p>A login form with if else conditions to alert the user for required fields.</p>
+                            <a href="links/LOGIN_WITH_CONDITIONAL_STATEMENT.html" class="btn" target="_blank">View</a>
+                        </div>
+                        <div class="activities-slide swiper-slide">
+                            <img src="assets/images/js5.png" alt="Images">
+                            <h3>JavaScript Calculator</h3>
+                            <p>A web-based calculator made by JavaScript functions and conditions.</p>
+                            <a href="links/calculatorJS/calcu.html" class="btn" target="_blank">View</a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- CSS Container -->
+
+            <div class="activities-wrapper" data-aos="fade-up">
+                <div class="container-wrap">
+                    <h2>CSS Projects</h2>
+                    <div class="activities-box mySwiper">
+                        <div class="activities-content swiper-wrapper">
+                            <div class="activities-slide swiper-slide">
+                                <img src="assets/images/css1.png" alt="Images">
+                                <h3 class="first">CSS Tutorial Book With Pseudo Class</h3>
+                                <p>A website demonstrating CSS and CSS Pseudo Classes.</p>
+                                <a href="links/MyCSS/css.html" class="btn" target="_blank">View</a>
+                            </div>
+                            <div class="activities-slide swiper-slide">
+                                <img src="assets/images/js3.png" alt="Images">
+                                <h3>CSS Box Models</h3>
+                                <p>A website that accepts user inputs such as name and birth year then displays the key
+                                    presses and calculates the age.</p>
+                                <a href="links/HTMLevents_PERSONALinfo.html" class="btn" target="_blank">View</a>
+                            </div>
+                            <div class="activities-slide swiper-slide">
+                                <img src="assets/images/Screenshot 2023-05-01 112435.png" alt="Images">
+                                <h3>Web Typography</h3>
+                                <p>A website designed to display an article about cryptocurrency with the use of
+                                    different CSS Typography</p>
+                                <a href="links/cryptopography/cryptopography.html" class="btn" target="_blank">View</a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="foot">
+        <p>Designed and Built by Denzel Nicdao | 2023</p>
+    </footer>
+
+    <!-- Put your JavaScript codes here -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 600
+        });
+
+        function changetheme() {
+            let target = document.body;
+            target.classList.toggle("theme-dark");
+        }
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 50,
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        const images = document.querySelectorAll('.image-about-container img');
+        let index = 0;
+
+        function showImage() {
+            images[index].style.opacity = 1;
+            setTimeout(hideImage, 4000); // Change the delay time as per your requirement
+        }
+
+        function hideImage() {
+            images[index].style.opacity = 0;
+            index = (index + 1) % images.length;
+            showImage();
+        }
+
+        showImage();
+
+
+        // Page Loader
+        // $(window).on("load", function() {
+        //     $(".load-wrapper").fadeOut("slow");
+        // })
+
+
+        // $.get("/assets/loader.html", function (data) {
+        //     $("#loading").replaceWith(data);
+        // });
+
+        // $(window).on('load', function () {
+        //     setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+        // });
+        // function removeLoader() {
+        //     $(".loader-wrapper").fadeOut(500, function () {
+        //         // fadeOut complete. Remove the loading div
+        //         $(".loader-wrapper").remove(); //makes page more lightweight
+        //     });
+        // }
+    </script>
+</body>
+
+</html>
